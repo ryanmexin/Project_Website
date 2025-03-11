@@ -1,0 +1,112 @@
+/* Global Reset for TodoApp */
+.todo-container {
+    width: 100%;
+    max-width: 600px;
+    margin: 20px auto;
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: center;
+  }
+  
+  /* Header Section */
+  .todo-header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+  
+  .todo-input {
+    width: 100%;
+    max-width: 400px; /* Control the max width */
+    padding: 12px 20px;
+    font-size: 1rem;
+    border: 2px solid #ccc;
+    border-radius: 8px;
+    outline: none;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: border-color 0.3s, box-shadow 0.3s;
+    margin-bottom: 10px; /* Space below the input */
+  }
+  
+  .todo-input:focus {
+    border-color: blue; /* Green border on focus */
+    box-shadow: 0 0 8px rgba(76, 175, 80, 0.4); /* Green glow on focus */
+  }
+  
+  .todo-submit-btn {
+    background-color: blue;
+    color: white;
+    font-size: 1rem;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 15px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin: 5px; /* Add spacing between buttons */
+  }
+  
+  .todo-submit-btn:hover {
+    background-color: #45a049; /* Slightly darker green on hover */
+  }
+  
+  /* List Section */
+  .todo-list {
+    list-style-type: none;
+    padding: 0;
+    margin-top: 20px;
+  }
+  
+  .todo-list li {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    padding: 10px 15px;
+    border-radius: 8px;
+    margin-bottom: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  .todo-list li:hover {
+    background-color: #f4f4f4;
+  }
+  
+  .todo-list li button {
+    background-color: #e74c3c;
+    color: white;
+    font-size: 0.9rem;
+    border: none;
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .todo-list li button:hover {
+    background-color: #c0392b; /* Darker red on hover */
+  }
+  
+  /* Empty State Styling */
+  .todo-empty {
+    font-size: 1.2rem;
+    color: #777;
+    margin-top: 20px;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .todo-container {
+      width: 90%; /* Ensure it fits smaller screens */
+      padding: 15px;
+    }
+  
+    .todo-input {
+      max-width: 100%; /* Input takes full width on smaller screens */
+    }
+  }
+  
